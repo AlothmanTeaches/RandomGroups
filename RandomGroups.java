@@ -12,7 +12,7 @@ public class RandomGroups {
   
   public static ArrayList<String> studentReader(){
     ArrayList<String> studenArrayList = new ArrayList<String>();
-
+    System.out.println("2nd dev was here");
     try {
       File stufile = new File("Student List.txt");
       Scanner sc = new Scanner(stufile);
