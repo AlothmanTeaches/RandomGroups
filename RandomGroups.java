@@ -6,12 +6,12 @@ import java.util.Scanner;
 public class RandomGroups {
   public static void main(String[] args) {
     System.out.println("Main works");
-    ArrayList arr = studentReader();
+    ArrayList<String> arr = studentReader();
     System.out.println(arr);
   }
   
   public static ArrayList<String> studentReader(){
-    ArrayList studenArrayList = new ArrayList<>();
+    ArrayList<String> studenArrayList = new ArrayList<String>();
 
     try {
       File stufile = new File("Student List.txt");
@@ -20,6 +20,7 @@ public class RandomGroups {
       while(sc.hasNextLine()){
         studenArrayList.add(sc.nextLine());
       }
+      sc.close();
     } catch (FileNotFoundException e) {
       e.printStackTrace();
     }
